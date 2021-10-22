@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+:root {
+    --grey: rgb(32, 32, 32);
+}
+
 html {
     font-size: 100%;
 }
@@ -11,8 +15,13 @@ html {
     box-sizing: border-box;
     font-family: 'Work Sans';
     font-size: 16px;
-    color: rgb(32, 32, 32);
+    color: var(--grey);
     overflow-x: hidden;
+}
+
+body {
+    padding: 0 3vw;
+    background: #FFF5E3;
 }
 
 h1, h2, h3 {
@@ -30,6 +39,11 @@ h2 {
 a {
     color: black;
     text-decoration: none;
+}
+
+img {
+    width: auto;
+    height: auto;
 }
 
 button {
@@ -87,7 +101,7 @@ nav {
 #bgvid {
     object-fit: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -97,7 +111,8 @@ nav {
   footer {
       display: flex;
       justify-content: space-between;
-      padding: 0 3vw;
+      padding-top: 3vh;
+      border-top: 2px solid var(--grey);
   }
 
 footer>h2 {

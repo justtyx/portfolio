@@ -3,6 +3,32 @@
     text-align: center;
 }
 
-.hero>button {
+.hero-text>button {
     margin-top: 25vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20vh;
+    height: 87vh;
+}
+
+.intro-text, .intro-photo>img, .case-text, .case-img {
+    max-width: 47vw;
+}
+
+.cases {
+    height: 100vh;
+}
+
+.case-content {
+    background-image: url(../media/gaussian.png);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.discover {
+    margin: 10vh 0;
 }
