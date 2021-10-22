@@ -12,8 +12,9 @@ html {
     font-family: 'Work Sans';
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Sporting Grotesque_Regular';
+    font-size: clamp(30px, 4rem, 58px);
 }
 
 a {
@@ -26,6 +27,15 @@ button {
     background: transparent;
     border-radius: 50px;
     padding: 1em 3em;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    transition-delay: 150ms;
+    background: black;
+    color: white;
 }
 
 img.logo {
@@ -39,6 +49,9 @@ nav {
     left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 3vh 3vw;
 }
 
 .menu-items {
@@ -47,7 +60,24 @@ nav {
     list-style: none;
 }
 
+.menu-items>a {
+    padding-left: 20px;
+}
+
+.menu-items>a>li:hover {
+    transition-delay: 150ms;
+    letter-spacing: 3px;
+}
+
 .hero {
     background-image: url(../media/gaussian.png);
     height: 90vh;
+}
+
+footer>h2 {
+    font-size: 0.8rem;
+}
+
+footer>a {
+    font-size: 0.7rem;
 }
