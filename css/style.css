@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(30px, 4rem, 65px);
+    font-size: clamp(30px, 3rem, 65px);
 }
 
 h2 {
@@ -74,15 +74,31 @@ nav {
     padding-left: 20px;
 }
 
-.menu-items>a>li:hover {
+.menu-items>a>li:hover, a:hover {
     transition-delay: 150ms;
     letter-spacing: 3px;
 }
 
 .hero {
-    background-image: url(../media/gaussian.png);
-    height: 90vh;
+    /* background-image: url(../media/gaussian.png);
+    height: 90vh; */
 }
+
+#bgvid {
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+
+  footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 3vw;
+  }
 
 footer>h2 {
     font-size: clamp(30px, 4rem, 30px);
