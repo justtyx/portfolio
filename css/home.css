@@ -54,6 +54,63 @@
     margin: 5vh auto 3vh;
 }
 
+/* case section */
+
+.cases {
+    height: 100vh;
+    background-image: url(../media/gaussian.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cases>h2 {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.case-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.case-text {
+    width: 30vw;
+}
+
+.case-img {
+    height: 50vh;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.case-img>img {
+    width: auto;
+    height: 100%;
+}
+
+.cases>button {
+    margin-bottom: 3vh;
+}
+
+.buttons {
+    display: flex;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+/* discover section */
+
+.discover {
+    margin: 3vh auto;
+    max-width: 1200px;
+    display: block;
+}
+
 @media screen and (max-width: 500px) {
     .intro-text {
         width: 90vw;
@@ -85,6 +142,15 @@
         margin: auto;
         display: block;
     }
+
+    .case-content {
+        flex-direction: column;
+    }
+
+    .case-text, .case-img {
+        width: 90vw;
+        max-width: none;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 501px) {
@@ -107,55 +173,3 @@
     }
 }
 
-/* case section */
-
-.cases {
-    height: 100vh;
-    background-image: url(../media/gaussian.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.cases>h2 {
-    margin-top: 3vh;
-    text-align: center;
-}
-
-.case-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2vw;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.case-text {
-    width: 30vw;
-}
-
-.case-img {
-    height: 50vh;
-    width: auto;
-}
-
-.case-img>img {
-    width: auto;
-    height: 100%;
-}
-
-.cases>button {
-    margin-bottom: 3vh;
-}
-
-.buttons {
-    display: flex;
-    gap: 2vw;
-    margin-top: 3vh;
-}
-
-/* discover section */
-
-.discover {
-    margin: 10vh 0;
-}
