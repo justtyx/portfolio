@@ -1,7 +1,7 @@
 .intro {
     display: flex;
     justify-content: space-between;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     height: 87vh;
 }
 

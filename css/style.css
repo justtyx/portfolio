@@ -75,6 +75,7 @@ header {
     align-items: center;
     width: 97vw;
     padding: 3vh 3vw;
+    z-index: 100;
 }
 
 .menu-items {
@@ -90,6 +91,11 @@ header {
 .menu-items>a>li:hover, a:hover {
     transition-delay: 150ms;
     letter-spacing: 3px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
 }
 
 .hero-text {
@@ -111,6 +117,14 @@ header {
     display: none;
 }
 
+.hero-text>button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media screen and (max-width: 450px) {
     nav {
         display: none;
@@ -123,8 +137,8 @@ header {
         height: 95vh;
     }
 
-    .hero-text {
-        height: 100vh;
+    .hero-title{
+        margin-top: 20%;
     }
     
     #bgvid {
@@ -165,10 +179,6 @@ header {
 
     .hero-text>p {
         display: block;
-    }
-
-    .hero-text>button {
-            margin-top: 30vh;
     }
 }
 
