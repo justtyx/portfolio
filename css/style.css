@@ -134,7 +134,8 @@ header {
         background-image: url(../media/gaussian.png);
         object-fit: fill;
         background-repeat: no-repeat;
-        height: 95vh;
+        height: 100vh;
+        max-height: 100vh;
     }
 
     .hero-title{
@@ -175,7 +176,7 @@ header {
     }
 
     .hero-title {
-        margin-top: 30vh;
+        margin-top: 40vh;
     }
 
     .hero-text>p {
