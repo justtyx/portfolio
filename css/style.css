@@ -99,10 +99,6 @@ nav {
     background-repeat: no-repeat;
 }
 
-#bgvid {
-    display: none;
-}
-
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -124,6 +120,10 @@ nav {
 }
 
 @media screen and (max-width: 420px) {
+    #bgvid {
+        display: none;
+    }
+
     button {
         min-width: 50vw;
         min-height: 40px;
