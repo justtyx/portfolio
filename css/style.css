@@ -105,6 +105,7 @@ header {
     justify-content: space-between;
     margin: 10vh 0 2vh;
     height: 68vh;
+    overflow-y: visible;
 }
 
 .hero-title {
