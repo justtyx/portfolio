@@ -1,12 +1,3 @@
-.hero-title {
-    padding-top: 40vh;
-    text-align: center;
-}
-
-.hero-text>button {
-    margin-top: 25vh;
-}
-
 .intro {
     display: flex;
     justify-content: space-between;
