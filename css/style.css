@@ -94,7 +94,6 @@ header {
 
 .hero {
     background-image: url(../media/gaussian.png);
-    height: 95vh;
     object-fit: fill;
     background-repeat: no-repeat;
 }
@@ -104,26 +103,27 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin: 10vh 0 2vh;
-    height: 68vh;
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 
 .hero-title {
     text-align: center;
     display: block;
     margin: auto;
-    overflow-y: visible;
 }
 
 .hero-text>p {
     margin: 0 3vw;
     display: none;
-    overflow-y: visible;
 }
 
 @media screen and (max-width: 450px) {
     nav {
         display: none;
+    }
+
+    .hero {
+        height: 95vh;
     }
     
     #bgvid {
@@ -147,6 +147,7 @@ header {
         top: 0;
         left: 0;
         z-index: -100;
+        overflow-y: hidden;
       }
 
     .hero {
@@ -154,7 +155,11 @@ header {
     }
 
     .hero-text {
-        margin: 30vh 0 2vh;
+        margin: 0;
+    }
+
+    .hero-title {
+        margin-top: 30vh;
     }
 
     .hero-text>p {
