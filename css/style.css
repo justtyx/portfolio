@@ -143,6 +143,7 @@ header {
     
     #bgvid {
         display: none;
+        visibility: hidden;
     }
 
     button {
