@@ -119,7 +119,7 @@ nav {
     display: none;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     #bgvid {
         display: none;
     }
@@ -130,7 +130,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 420px){
+@media screen and (min-width: 450px){
 
     #bgvid {
         display: block;
