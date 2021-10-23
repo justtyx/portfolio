@@ -92,12 +92,6 @@ header {
     letter-spacing: 3px;
 }
 
-.hero {
-    background-image: url(../media/gaussian.png);
-    object-fit: fill;
-    background-repeat: no-repeat;
-}
-
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -123,7 +117,14 @@ header {
     }
 
     .hero {
+        background-image: url(../media/gaussian.png);
+        object-fit: fill;
+        background-repeat: no-repeat;
         height: 95vh;
+    }
+
+    .hero-text {
+        height: 100vh;
     }
     
     #bgvid {
