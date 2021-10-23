@@ -7,6 +7,12 @@
     margin: 3vh auto 0;
 }
 
+.intro>h2 {
+    text-align: center;
+    overflow-y: hidden;
+    margin-top: 3vh;
+}
+
 .main-intro-content {
     display: flex;
     justify-content: space-between;
@@ -14,7 +20,6 @@
     gap: 2vw;
     max-width: 1000px;
     margin: 0 auto;
-    height: 90vh;
 }
 
 .intro-text, .intro-photo, .case-text, .case-img {
@@ -36,7 +41,6 @@
 }
 
 .intro-photo>img {
-    /* height: 100%; */
     width: 100%;
 }
 
@@ -46,28 +50,42 @@
     }
 
     .intro-text {
-        max-width: 50vw;
+        max-width: none;
         width: 50vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .main-intro-content {
-       flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .intro-text {
+        max-width: none;
+        width: 90vw;
+    }
+
+    .intro-photo {
+        width: 90vw;
+        max-width: none;
+        height: 50vw;
+        align-self: center;
+        overflow-y: hidden;
+        margin-top: 2vh;
     }
 }
 
 .intro>button {
-    margin-bottom: 3vh;
+    margin: 5vh auto 3vh;
 }
 
 .cases {
     height: 100vh;
+    background-image: url(../media/gaussian.png);
 }
 
 .case-content {
-    background-image: url(../media/gaussian.png);
-    height: 90vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
 }
