@@ -1,3 +1,5 @@
+/* intro section */
+
 .intro {
     height: 100vh;
     max-height: 100vh;
@@ -22,7 +24,7 @@
     margin: 0 auto;
 }
 
-.intro-text, .intro-photo, .case-text, .case-img {
+.intro-text, .intro-photo {
     max-width: 30vw;
 }
 
@@ -33,19 +35,23 @@
     width: 30vw;
 }
 
-.intro-photo {
+.intro-photo, .case-img {
     width: 30vw;
     height: 30vw;
     align-self: center;
     overflow-y: hidden;
 }
 
-.intro-photo>img {
+.intro-photo>img, .case-img>img {
     width: 100%;
 }
 
 .intro-photo.desktop {
     display: none;
+}
+
+.intro>button {
+    margin: 5vh auto 3vh;
 }
 
 @media screen and (max-width: 500px) {
@@ -67,7 +73,7 @@
     .intro-photo {
         width: 90vw;
         max-width: none;
-        height: 50vw;
+        height: 40vw;
         align-self: center;
         overflow-y: hidden;
         margin-top: 2vh;
@@ -88,7 +94,6 @@
 
     .intro-text {
         max-width: none;
-        width: 50vw;
     }
 }
 
@@ -102,26 +107,54 @@
     }
 }
 
-
-
-.intro>button {
-    margin: 5vh auto 3vh;
-}
+/* case section */
 
 .cases {
     height: 100vh;
     background-image: url(../media/gaussian.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cases>h2 {
+    margin-top: 3vh;
     text-align: center;
 }
 
 .case-content {
-    /* height: 100vh; */
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.case-text {
+    width: 30vw;
+}
+
+.case-img {
+    height: 50vh;
+    width: auto;
+}
+
+.case-img>img {
+    width: auto;
+    height: 100%;
+}
+
+.cases>button {
+    margin-bottom: 3vh;
+}
+
+.buttons {
+    display: flex;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+/* discover section */
 
 .discover {
     margin: 10vh 0;

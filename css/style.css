@@ -55,10 +55,23 @@ button {
     border: 2px solid var(--grey);
     background: transparent;
     border-radius: 50px;
-    padding: 1vw 5vw;
+    width: 15vw;
+    min-width: 200px;
+    height: 6vh;
     display: block;
     margin: 0 auto;
     cursor: pointer;
+    text-align: center;
+}
+
+button.focused {
+    background: var(--grey);
+    color: white;
+}
+
+button.focused:hover {
+    transition-delay: 150ms;
+    background: black;
 }
 
 button:hover {
