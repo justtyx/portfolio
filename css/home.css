@@ -1,12 +1,64 @@
 .intro {
+    height: 100vh;
+    max-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    /* margin-top: 20vh; */
-    height: 87vh;
+    margin: 3vh auto 0;
 }
 
-.intro-text, .intro-photo>img, .case-text, .case-img {
-    max-width: 47vw;
+.main-intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.intro-text, .intro-photo, .case-text, .case-img {
+    max-width: 30vw;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.intro-photo {
+    width: 30vw;
+    height: 30vw;
+    align-self: center;
+    overflow-y: hidden;
+}
+
+.intro-photo>img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-intro-content {
+        width: 90vw;
+    }
+
+    .intro-text {
+        max-width: 50vw;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-intro-content {
+       flex-direction: column;
+    }
+}
+
+.intro>button {
+    margin-bottom: 3vh;
 }
 
 .cases {
