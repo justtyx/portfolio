@@ -32,6 +32,10 @@ article.competences>section {
    height: auto;
 }
 
+article>button {
+    margin-top: 3vh;
+}
+
 @media screen and (max-width: 1200px) {
     article.competences {
         margin: 5vh 3vw 2vh 
