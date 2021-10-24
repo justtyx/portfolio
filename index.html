@@ -9,6 +9,7 @@
     <meta name="image" content="media/justina-jemeljanovaite-portfolio.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="shortcut icon" href="media/justtyx-favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="media/assets/Sporting-Grotesque-main/Sporting-Grotesque-main/webfonts/font.css">
 </head>
@@ -76,24 +77,75 @@
         </section>
         <section class="cases" id="cases">
             <h2>Cases</h2>
-            <section class="case-content byu-case">
-                <div class="case-text">
-                    <h3>1. BYÙ Studio</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas id aliquam risus, mi
-                        id
-                        eu risus. Egestas nibh non dignissim mattis non aliquet cras. Nisl et sit sagittis mauris, leo.
-                        Sed
-                        posuere habitant elementum nec iaculis consequat ridiculus neque cras.</p>
-                    <div class="buttons">
-                        <button onclick="window.location.href='#discover'">Learn more →</button>
-                        <button class="focused"
-                            onclick="window.open('https://justtyx.github.io/BYUstudio.v2','_blank')">Visit the
-                            website ↑</button>
+            <div class="slideshow-container">
+                <section class="case-content byu-case mySlides fade">
+                    <div class="case-text">
+                        <h3>1. BYÙ Studio</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas id aliquam risus,
+                            mi
+                            id
+                            eu risus. Egestas nibh non dignissim mattis non aliquet cras. Nisl et sit sagittis mauris,
+                            leo.
+                            Sed
+                            posuere habitant elementum nec iaculis consequat ridiculus neque cras.</p>
+                        <div class="buttons">
+                            <button onclick="window.location.href='#discover'">Learn more →</button>
+                            <button class="focused"
+                                onclick="window.open('https://justtyx.github.io/BYUstudio.v2','_blank')">Visit the
+                                website ↑</button>
+                        </div>
                     </div>
-                </div>
-                <div class="case-img"><img src="media/byu.png" alt="">
-                </div>
-            </section>
+                    <div class="case-img"><img src="media/byu.png" alt="">
+                    </div>
+                </section>
+                <section class="case-content byu-case mySlides fade">
+                    <div class="case-text">
+                        <h3>2. Circulents</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas id aliquam risus,
+                            mi
+                            id
+                            eu risus. Egestas nibh non dignissim mattis non aliquet cras. Nisl et sit sagittis mauris,
+                            leo.
+                            Sed
+                            posuere habitant elementum nec iaculis consequat ridiculus neque cras.</p>
+                        <div class="buttons">
+                            <button onclick="window.location.href='#discover'">Learn more →</button>
+                            <button class="focused"
+                                onclick="window.open('https://justtyx.github.io/BYUstudio.v2','_blank')">Visit the
+                                website ↑</button>
+                        </div>
+                    </div>
+                    <div class="case-img"><img src="media/byu.png" alt="">
+                    </div>
+                </section>
+                <section class="case-content byu-case mySlides fade">
+                    <div class="case-text">
+                        <h3>1. People of 2050</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas id aliquam risus,
+                            mi
+                            id
+                            eu risus. Egestas nibh non dignissim mattis non aliquet cras. Nisl et sit sagittis mauris,
+                            leo.
+                            Sed
+                            posuere habitant elementum nec iaculis consequat ridiculus neque cras.</p>
+                        <div class="buttons">
+                            <button onclick="window.location.href='#discover'">Learn more →</button>
+                            <button class="focused"
+                                onclick="window.open('https://justtyx.github.io/BYUstudio.v2','_blank')">Visit the
+                                website ↑</button>
+                        </div>
+                    </div>
+                    <div class="case-img"><img src="media/byu.png" alt="">
+                    </div>
+                </section>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
             <button onclick="window.location.href='#discover'">Discover more skills ↓</button>
         </section>
         <section class="discover" id="discover">
@@ -120,7 +172,7 @@
             <a href="about.html">About</a>
         </section>
     </footer>
-
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
