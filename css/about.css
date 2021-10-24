@@ -1,0 +1,33 @@
+article.competences {
+    max-width: 1200px;
+    margin: 5vh auto 2vh;
+    height: 100vh;
+}
+
+.competences>h2, .competences>p:first-child {
+    text-align: center;
+}
+
+article.competences>section {
+    column-count: 2;
+    column-gap: 2vw;
+    margin-top: 2vh;
+}
+
+.logos {
+    display: flex;
+    gap: 1vw;
+}
+
+.software-logo {
+    width: 3vw;
+    height: 3vw;
+    min-height: 35px;
+    min-width: 35px;
+    overflow-y: hidden;
+}
+
+.logo>img {
+   width: 100%;
+   height: auto;
+}
