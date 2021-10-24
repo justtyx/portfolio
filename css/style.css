@@ -29,7 +29,7 @@ main {
     border-bottom: 2px solid var(--grey);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Sporting Grotesque_Regular';
 }
 
@@ -54,6 +54,14 @@ a {
 img {
     width: auto;
     height: auto;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul>ul {
+    margin-left: 1vw;
 }
 
 button {
