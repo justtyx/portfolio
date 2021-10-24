@@ -64,7 +64,9 @@
 
 .cases {
     height: 100vh;
-    background-image: url(../media/gaussian.png);
+    background-image: url(../media/gaussian-gradient-blur-background.jpg);
+    background-repeat: initial;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
