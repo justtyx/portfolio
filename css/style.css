@@ -132,8 +132,8 @@ header {
 }
 
 .hero-text>p {
-    margin: 0 3vw;
     display: none;
+    text-align: center;
 }
 
 .hero-text>button {
