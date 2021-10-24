@@ -33,7 +33,7 @@
     width: 50vw;
 }
 
-.intro-photo, .case-img {
+.intro-photo {
     width: 30vw;
     height: 30vw;
     align-self: center;
@@ -80,6 +80,7 @@
 .case-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     gap: 2vw;
     max-width: 1200px;
     margin: 0 auto;
@@ -90,15 +91,15 @@
 }
 
 .case-img {
-    height: 50vh;
-    width: auto;
+    width: 40vw;
+    min-width: 500px;
     display: block;
     margin: auto;
 }
 
 .case-img>img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .cases>button {
@@ -107,8 +108,13 @@
 
 .buttons {
     display: flex;
+    align-self: start;
     gap: 2vw;
     margin-top: 3vh;
+}
+
+.buttons>button {
+    margin: 0;
 }
 
 /* discover section */
