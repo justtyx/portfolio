@@ -25,9 +25,9 @@ body {
     background: var(--bg-color);
 }
 
-main {
+/* main {
     border-bottom: 2px solid var(--grey);
-}
+} */
 
 h1, h2, h3, h4 {
     font-family: 'Sporting Grotesque_Regular';
