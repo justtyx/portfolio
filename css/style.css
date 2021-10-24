@@ -42,7 +42,8 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(18px, 1.7rem, 35px);
+    font-size: clamp(18px, 1.4rem, 35px);
+    margin-top: 2vh;
 }
 
 a {
@@ -101,7 +102,7 @@ header {
     z-index: 100;
 }
 
-.menu-items {
+nav>ul.menu-items {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -173,6 +174,12 @@ header {
     button {
         min-width: 50vw;
         min-height: 40px;
+    }
+
+    footer>section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1vw;
     }
 }
 

@@ -1,8 +1,6 @@
 /* intro section */
 
 .intro {
-    height: 100vh;
-    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,19 +18,19 @@
     justify-content: space-between;
     align-items: center;
     gap: 2vw;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .intro-text, .intro-photo {
-    max-width: 30vw;
+    max-width: 50vw;
 }
 
 .intro-text {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 30vw;
+    width: 50vw;
 }
 
 .intro-photo, .case-img {
@@ -44,6 +42,19 @@
 
 .intro-photo>img, .case-img>img {
     width: 100%;
+}
+
+.intro-text>ul{
+    list-style-position: inside;
+    margin-top: 1vh;
+}
+
+.intro-text>ul>ul {
+    padding-left: 1vw;
+}
+
+.intro-text>a {
+    margin-top: 1vh;
 }
 
 .intro-photo.desktop {
@@ -176,6 +187,12 @@
 
     .intro-photo.mobile {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .intro {
+        height: 100vh;
     }
 }
 
