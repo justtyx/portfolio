@@ -121,6 +121,10 @@
     .intro-text {
         width: 90vw;
     }
+
+    article.competences {
+        height: unset;
+    }
 }
 
 @media screen and (max-width: 900px) {

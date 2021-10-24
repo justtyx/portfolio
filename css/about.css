@@ -1,4 +1,4 @@
-article.competences {
+.competences {
     max-width: 1200px;
     margin: 5vh auto 2vh;
     height: 100vh;
@@ -30,4 +30,10 @@ article.competences>section {
 .logo>img {
    width: 100%;
    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    article.competences {
+        margin: 5vh 3vw 2vh 
+    }
 }
