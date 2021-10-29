@@ -40,4 +40,32 @@
     nav > ul.menu-items > a > li {
         font-size: 30px;
     }
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(150%);
+        }
+    
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-out {
+        from {
+            transform: translateX(0);
+        }
+    
+        to {
+            transform: translateX(150%);
+        }
+    }
+    
+    .slide-in {
+        animation: slide-in 300ms 1 ease-out;
+    }
+    
+    .slide-out {
+        animation: slide-out 300ms 1 ease-in;
+    }
 }
