@@ -169,10 +169,8 @@ nav>ul.menu-items {
     transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 500px) {
-    nav {
-        display: none;
-    }
+
+@media screen and (max-width: 500px) {
 
     p, ul {
         font-size: 18px;
