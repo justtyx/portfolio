@@ -1,6 +1,8 @@
 @media screen and (max-width: 500px) {
     nav {
         position: relative;
+        height: 40px;
+        width: 100vw;
     }
 
     .hamburger {
@@ -27,6 +29,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
+    z-index: 150;
     padding: 20vh 0 60vh;
     background: var(--bg-color);
     flex-direction: column;

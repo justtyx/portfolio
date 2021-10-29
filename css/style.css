@@ -122,6 +122,10 @@ header {
     z-index: 100;
 }
 
+header>a:first-child {
+    width: 150px;
+}
+
 nav>ul.menu-items {
     display: flex;
     justify-content: space-between;
