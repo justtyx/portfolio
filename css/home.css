@@ -137,6 +137,25 @@
     article.competences {
         height: unset;
     }
+
+    .cases {
+        height: unset;
+    }
+
+    .buttons> button {
+        margin: 0 auto;
+    }
+
+    .case-img {
+        min-width: none;
+        width: 100vw;
+    }
+
+    .case-img>img {
+        width: 82vw;
+        height: auto;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -167,11 +186,16 @@
 
     .case-content {
         flex-direction: column;
+        justify-content: space-between;
     }
 
-    .case-text, .case-img {
+    .case-text {
         width: 90vw;
         max-width: none;
+    }
+
+    .case-img {
+        width: 70vw;
     }
 }
 
@@ -188,6 +212,14 @@
 @media screen and (max-width: 1200px) {
     .discover {
         margin: 3vh 3vw;
+    }
+
+    .case-content {
+        flex-direction: column;
+    }
+
+    .case-text, .case-img {
+        width: 80vw;
     }
 }
 

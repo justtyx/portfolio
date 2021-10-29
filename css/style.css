@@ -82,7 +82,7 @@ button {
     border-radius: 50px;
     width: 15vw;
     min-width: 200px;
-    height: 6vh;
+    height: 40px;
     display: block;
     margin: 0 auto;
     cursor: pointer;
@@ -174,21 +174,33 @@ nav>ul.menu-items {
         display: none;
     }
 
+    p, ul {
+        font-size: 18px;
+    }
+
     .hero {
         background-image: url(../media/gaussian-gradient-blur-background.jpg);
         object-fit: fill;
         background-repeat: no-repeat;
-        height: 100vh;
-        max-height: 100vh;
+        height: 90vh;
+        max-height: 90vh;
     }
 
     .hero-title{
         margin-top: 30%;
     }
+
+    .hero-text>button, .intro>button, .cases>button {
+        display: none;
+    }
     
     #bgvid {
         display: none;
         visibility: hidden;
+    }
+
+    section.intro {
+        margin: 0 auto 5vh;
     }
 
     button {
@@ -237,6 +249,14 @@ nav>ul.menu-items {
 @media screen and (max-width: 1200px) {
     body>footer {
         margin: 0 3vw;
+    }
+
+    div.case-img {
+        margin: 0;
+    }
+
+    .case-content {
+        width: 80vw;
     }
 }
 

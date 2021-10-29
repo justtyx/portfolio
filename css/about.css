@@ -21,6 +21,7 @@ article.competences>section {
 .logos {
     display: flex;
     gap: 1vw;
+    flex-wrap: wrap;
 }
 
 .software-logo {
@@ -43,5 +44,13 @@ article>button {
 @media screen and (max-width: 1200px) {
     article.competences {
         margin: 5vh 3vw 2vh 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    article.competences > section {
+        column-count: 1;
+        margin-left: 2vw;
     }
 }
