@@ -8,6 +8,7 @@
     <title>About me | Justina Jemeljanovaitė multimedia design portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="shortcut icon" href="media/justtyx-favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="media/assets/Sporting-Grotesque-main/Sporting-Grotesque-main/webfonts/font.css">
@@ -17,13 +18,17 @@
     <header>
         <a href="index.html"><img src="media/justtyx-logo.svg" alt="" class="logo"></a>
         <nav>
-            <ul class="menu-items">
+            <div class="relative">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <ul class="menu-items" id="menu-items">
                 <a href="index.html">
                     <li>Home</li>
                 </a>
-                <!-- <a href="portfolio.html">
-                    <li>Portfolio</li>
-                </a> -->
                 <a href="about.html">
                     <li>About me</li>
                 </a>
@@ -33,7 +38,6 @@
     <main>
         <section class="hero">
             <video playsinline autoplay muted loop poster="media/gaussian.png" id="bgvid">
-                <!-- <source src="polina.webm" type="video/webm"> -->
                 <source src="media/gaussian-blur.mp4" type="video/mp4">
             </video>
             <section class="hero-text">
@@ -145,16 +149,21 @@
         <section class="socials">
             <h2 class="social-icons">Connect with me</h2>
             <a href="https://www.linkedin.com/in/jemeljanovaite/" target="_blank">LinkedIn</a>
+            <a href="https://www.behance.net/justtyx" target="_blank">Behance</a>
             <a href="https://github.com/justtyx" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/justtyx/" target="_blank">Instagram</a>
         </section>
         <section class="sitemap">
             <h2 class="sitemap-heading">Sitemap</h2>
             <a href="index.html">Home</a>
-            <!-- <a href="portfolio.html">Portfolio</a> -->
             <a href="about.html">About</a>
         </section>
+        <div class="font-attribution">
+            <p>A grotesque typeface by <a href="http://lucaslebihan.fr" target="_blank">Lucas Le
+                    Bihan</a></p>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
 
 </body>
 
