@@ -76,7 +76,7 @@ ul>ul {
     margin-left: 1vw;
 }
 
-button {
+button, a.resume {
     border: 2px solid var(--grey);
     background: transparent;
     border-radius: 50px;
@@ -89,6 +89,11 @@ button {
     text-align: center;
 }
 
+a.resume {
+    padding-top: 1vh;
+    margin: 4vh auto 0;
+}
+
 button.focused {
     background: var(--grey);
     color: white;
@@ -99,7 +104,7 @@ button.focused:hover {
     background: black;
 }
 
-button:hover {
+button:hover, a.resume:hover {
     transition-delay: 150ms;
     background: var(--grey);
     color: white;
