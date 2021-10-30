@@ -57,6 +57,7 @@ a {
 
 a:hover {
     color: var(--link-color);
+    transition: color 200ms ease-in-out;
 }
 
 ::selection {
@@ -100,14 +101,14 @@ button.focused {
 }
 
 button.focused:hover {
-    transition-delay: 150ms;
     background: black;
+    transition: background-color 250ms ease-in-out;
 }
 
 button:hover, a.resume:hover {
-    transition-delay: 150ms;
     background: var(--grey);
     color: white;
+    transition: 250ms ease-in-out;
 }
 
 img.logo {
@@ -144,6 +145,7 @@ nav>ul.menu-items {
 .menu-items>a>li:hover {
     transition-delay: 150ms;
     letter-spacing: 3px;
+    transition: letter-spacing 250ms ease-in-out;
 }
 
 .hero {
