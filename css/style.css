@@ -278,10 +278,13 @@ footer {
 
 .font-attribution, .font-attribution>a {
     width: 100vw;
-    font-size: 14px;
     margin-top: 2vh;
     padding-top: 1vh;
     border-top: 1px solid var(--grey);
+}
+
+.font-attribution>p, .font-attribution>p>a {
+    font-size: 12px;
 }
 
 h2.social-icons, h2.sitemap-heading {
