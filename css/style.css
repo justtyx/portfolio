@@ -270,9 +270,18 @@ nav>ul.menu-items {
 footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2vh 0 1vh;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.font-attribution, .font-attribution>a {
+    width: 100vw;
+    font-size: 14px;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    border-top: 1px solid var(--grey);
 }
 
 h2.social-icons, h2.sitemap-heading {
